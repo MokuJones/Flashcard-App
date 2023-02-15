@@ -5,12 +5,12 @@ import { readDeck, updateDeck } from "../utils/api/index";
 function EditDeck() {
   const history = useHistory();
   const { deckId } = useParams();
-  const initialState = {
+  const initialDeckState = {
     id: "",
     name: "",
     description: "",
   };
-  const [deck, setDeck] = useState(initialState);
+  const [deck, setDeck] = useState(initialDeckState);
 
   useEffect(() => {
     async function fetchData() {
@@ -53,7 +53,7 @@ function EditDeck() {
         <li className="breadcrumb-item active">Edit Deck</li>
       </ol>
       <form onSubmit={handleSubmit}>
-        <h1>Edit Deck</h1>
+        <h2>Edit Deck</h2>
         <div className="form-group">
           <label>Name</label>
           <textarea

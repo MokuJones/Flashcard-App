@@ -53,7 +53,7 @@ function Deck() {
     }
   }
 
-  if (cards.length > 0) {
+  if (cards.length >= 0) {
     return (
       <div>
         <ol className="breadcrumb">

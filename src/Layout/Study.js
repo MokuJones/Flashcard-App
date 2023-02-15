@@ -7,7 +7,7 @@ function Study() {
   const { deckId } = useParams();
   const [deck, setDeck] = useState({});
   const [cards, setCards] = useState([]);
-  const [cardNumber, setCardNumber] = useState(1);
+  const [cardNum, setCardNum] = useState(1);
   const [front, isFront] = useState(true);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ function Study() {
   function nextCard(index, total) {
     console.log(index);
     if (index < total) {
-      setCardNumber(cardNumber + 1);
+      setCardNum(cardNum + 1);
       isFront(true);
     } else {
       if (
@@ -32,7 +32,7 @@ function Study() {
           `Restart cards? Click 'cancel' to return to the home page`
         )
       ) {
-        setCardNumber(1);
+        setCardNum(1);
         isFront(true);
       } else {
         history.push("/");
@@ -67,7 +67,7 @@ function Study() {
     return (
       <div className="card">
         {cards.map((card, index) => {
-          if (index === cardNumber - 1) {
+          if (index === cardNum - 1) {
             return (
               <div className="card-body" key={card.id}>
                 <div className="card-title">

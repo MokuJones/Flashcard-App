@@ -9,11 +9,6 @@
       "name": "Test Deck",
       "description": "Just a test deck",
       "id": 3
-    },
-    {
-      "name": "Test",
-      "description": "Testing",
-      "id": 4
     }
   ],
   "cards": [

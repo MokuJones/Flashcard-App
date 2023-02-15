@@ -34,7 +34,7 @@ function Home() {
   return (
     <div className="container">
       <Link className="btn btn-secondary mb-2" to="/decks/new">
-        + Create Deck
+        Create Deck
       </Link>
       <div className="card-deck">
         {decks.map((deck) => {

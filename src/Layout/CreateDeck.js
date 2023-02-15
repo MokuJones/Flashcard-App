@@ -25,10 +25,6 @@ function CreateDeck() {
     return response;
   }
 
-  async function handleCancel() {
-    history.push("/");
-  }
-
   return (
     <div>
       <ol className="breadcrumb">
@@ -64,7 +60,7 @@ function CreateDeck() {
         </div>
         <button
           className="btn btn-secondary mx-1"
-          onClick={() => handleCancel()}
+          onClick={() => history.push("/")}
         >
           Cancel
         </button>

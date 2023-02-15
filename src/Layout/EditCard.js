@@ -11,6 +11,7 @@ function EditCard() {
     description: "",
   };
   const initialCardState = {
+    id: "",
     front: "",
     back: "",
   };
@@ -39,7 +40,7 @@ function EditCard() {
       [target.name]: target.value,
     });
   }
-   async function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
     const abortController = new AbortController();
     const response = await updateCard({ ...card }, abortController.signal);
@@ -58,8 +59,8 @@ function EditCard() {
         </li>
         <li className="breadcrumb-item active">Edit Card {cardId}</li>
       </ol>
-      <h1>Edit Card</h1>
       <form onSubmit={handleSubmit}>
+        <h2>Edit Card</h2>
         <div className="form-group">
           <label>Front</label>
           <textarea
@@ -80,16 +81,16 @@ function EditCard() {
             handleChange={handleChange}
             value={card.back}
           />
-          </div>
-          <button
-            onClick={() => history.push(`/decks/${deckId}`)}
-            className="btn btn-secondary mx-1"
-          >
-            Cancel
-          </button>
-          <button type="submit" className="btn btn-primary mx-1">
-            Submit
-          </button>
+        </div>
+        <button
+          onClick={() => history.push(`/decks/${deckId}`)}
+          className="btn btn-secondary mx-1"
+        >
+          Cancel
+        </button>
+        <button type="submit" className="btn btn-primary mx-1">
+          Submit
+        </button>
       </form>
     </div>
   );

@@ -49,10 +49,6 @@ function AddCard() {
     return response;
   }
 
-  async function handleDone() {
-    history.push(`/decks/${deckId}`);
-  }
-
   return (
     <div>
       <ol className="breadcrumb">
@@ -88,7 +84,10 @@ function AddCard() {
             value={newCard.back}
           />
         </div>
-        <button className="btn btn-secondary mx-1" onClick={() => handleDone()}>
+        <button
+          className="btn btn-secondary mx-1"
+          onClick={() => history.push(`/decks/${deckId}`)}
+        >
           Done
         </button>
         <button className="btn btn-primary mx-1" type="submit">
