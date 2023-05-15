@@ -47,5 +47,26 @@ Add Card: (/decks/:deckId/cards/new) Allows the user to add a new card to an exi
 Edit Card: (/decks/:deckId/cards/:cardId/edit) Allows the user to modify information on an existing card
 ```
 
+## Data Examples
+
+Decks
+```
+{
+  "id": 1,
+  "name": "Rendering in React",
+  "description": "React's component structure allows for quickly building a complex web application that relies on DOM manipulation. "
+}
+```
+
+Cards
+```
+{
+  "id": 1,
+  "front": "Differentiate between Real DOM and Virtual DOM.",
+  "back": "Virtual DOM updates are faster but do not directly update the HTML",
+  "deckId": 1
+}
+```
+
 
 
