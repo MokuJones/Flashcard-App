@@ -4,6 +4,7 @@
 
 A local school has decided to put together a flashcard application, Flashcard-o-matic, to help their students study online. Teachers will use this application to create decks of flashcards for the subjects they teach, and students will study the decks. The school needs you to build the application that the students and teachers will use.
 
+
 ## Learning Objectives
 
 - Installing packages via NPM
@@ -12,6 +13,7 @@ A local school has decided to put together a flashcard application, Flashcard-o-
 - Creating routes, including nested routes, using React Router
 - Using hooks like useState(), useParams(), and useHistory()
 - Debugging React code through console output and using the VS Code debugger
+
 
 ## Skills Used
 
@@ -22,6 +24,7 @@ A local school has decided to put together a flashcard application, Flashcard-o-
 - Bootstrap
 - React Router
 - React Hooks (useState, useEffect, useParam, useHistory)
+
 
 ## Tasks Completed
 
