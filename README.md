@@ -23,13 +23,24 @@ A local school has decided to put together a flashcard application, Flashcard-o-
 - React Router
 - React Hooks (useState, useEffect, useParam, useHistory)
 
-## Home
+## Tasks Completed
 
-- A Create Deck button is shown, and clicking it brings the user to the Create Deck screen.
-- Existing decks are each shown with the deck name, the number of cards, and a Study, View, and Delete button.
-- Clicking the Study button brings the user to the Study screen.
-- Clicking the View button brings the user to the Deck screen.
-- Clicking the Delete button shows a warning message before deleting the deck.
+```
+Home:
+/	Shows a list of decks with options to create, study, view, or delete a deck
+Study:
+/decks/:deckId/study	Allows the user to study the cards from a specified deck
+Create Deck:
+/decks/new	Allows the user to create a new deck
+Deck:
+/decks/:deckId	Shows all of the information about a specified deck with options to edit or add cards to the deck, navigate to the study screen, or delete the deck
+Edit Deck:
+/decks/:deckId/edit	Allows the user to modify information on an existing deck
+Add Card:
+/decks/:deckId/cards/new	Allows the user to add a new card to an existing deck
+Edit Card:
+/decks/:deckId/cards/:cardId/edit	Allows the user to modify information on an existing card
+```
 
 
 
