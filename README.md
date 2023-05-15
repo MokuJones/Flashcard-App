@@ -11,4 +11,15 @@ A local school has decided to put together a flashcard application, Flashcard-o-
 - Writing React function components
 - Creating routes, including nested routes, using React Router
 - Using hooks like useState(), useParams(), and useHistory()
-D- ebugging React code through console output and using the VS Code debugger
+- Debugging React code through console output and using the VS Code debugger
+
+## Skills Used
+
+- React.js
+- Javascript
+- HTML / JSX
+- CSS
+- Bootstrap
+- React Router
+- React Hooks (useState, useEffect, useParam, useHistory)
+
